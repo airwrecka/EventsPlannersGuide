@@ -201,7 +201,71 @@
 					<div class="ui right attached active tab segment" data-tab="events">
 						
 						<div class="sixteen wide column">
-							SELECT AN EVENT TO BEGIN
+							<h1>TODOS FOR TODAY</h1>
+							<table class="ui very basic table">
+							 
+							  <tbody>
+							    <tr>
+							    <td>
+							      <div class="ui checkbox">
+								      <input type="checkbox">
+								      <label>Go shopping</label>
+								    </div>
+								    </td>
+							    </tr>
+							    <tr>
+							    <td>
+							      <div class="ui checkbox">
+								      <input type="checkbox">
+								      <label>Clean house</label>
+								    </div>
+								    </td>
+							    </tr>
+							    <tr>
+							    <td>
+							      <div class="ui checkbox">
+								      <input type="checkbox">
+								      <label>Cook dinner</label>
+								    </div>
+								    </td>
+							    </tr>
+							  </tbody>
+							</table>
+							
+							<h4 class="ui horizontal header divider">
+							    <i class="checkmark box icon"></i>
+							    For Tomorrow
+							  </h4>
+							  
+							<table class="ui very basic table">
+							 
+							  <tbody>
+							    <tr>
+							    <td>
+							      <div class="ui checkbox">
+								      <input type="checkbox">
+								      <label>Todo 1</label>
+								    </div>
+								    </td>
+							    </tr>
+							    <tr>
+							    <td>
+							      <div class="ui checkbox">
+								      <input type="checkbox">
+								      <label>Todo 2</label>
+								    </div>
+								    </td>
+							    </tr>
+							    <tr>
+							    <td>
+							      <div class="ui checkbox">
+								      <input type="checkbox">
+								      <label>Todo 3</label>
+								    </div>
+								    </td>
+							    </tr>
+							  </tbody>
+							</table>
 						</div>
 					</div>
 					
