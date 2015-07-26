@@ -5,6 +5,7 @@
  * --------------------------------------------------------------------------- */
 package project.controller;
 
+import java.util.List;
 import org.slim3.controller.Controller;
 import org.slim3.controller.Navigation;
 
@@ -21,7 +22,9 @@ public class IndexController extends Controller {
     ProjectService service = new ProjectService();
 
     @Override
-    protected Navigation run() throws Exception {
+    public Navigation run() throws Exception {
+        List<TodoModel> todoList = service.getTodoList();
+        requestScope("todoList", todoList);
         return forward("project/index.jsp");
     }
 }

@@ -12,9 +12,10 @@ import org.slim3.datastore.Datastore;
 import project.meta.TodoModelMeta;
 import project.model.TodoModel;
 
+
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
-import com.google.appengine.api.datastore.Query;
+
 import com.google.appengine.api.datastore.Transaction;
 
 public class ProjectDao {
@@ -34,7 +35,17 @@ public class ProjectDao {
     }
     return result;
     }
-        
+    
+    /**
+     * Method used to retrieve list of tweets.
+     * @return List<Tweet> - list of tweets.
+     */
+    public List<TodoModel> getAllTodo() {
+        TodoModelMeta t = new TodoModelMeta();
+        Key parentKey = KeyFactory.createKey("Account", "Default");
+        return Datastore.query(t ,parentKey).asList();
+    }
+
     
 
 }

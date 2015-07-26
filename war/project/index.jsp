@@ -183,8 +183,14 @@
 					</div>
 				<div class="huge labeled icon ui blue button" >
 				  <i class="plus icon"></i>
+
 				  Add Todo
 				</div>
+				<p>What are you doing?</p>
+		<form method="post" action="todo">
+			<textarea name="content"></textarea><br />
+			<input type="submit" value="todo" />
+		</form>
 			</div>
 			
 			
