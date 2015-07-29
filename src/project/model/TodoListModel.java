@@ -8,7 +8,7 @@ import org.slim3.datastore.Attribute;
 import org.slim3.datastore.Model;
 
 @Model(schemaVersion = 1)
-public class TodoModel implements Serializable {
+public class TodoListModel implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -37,35 +37,6 @@ public class TodoModel implements Serializable {
         this.key = key;
     }
 
-    
-    /**
-     * Todo id.
-     */
-    private long id;
-    
- 
-    
-    /**
-     * description of event.
-     */
-    private String desc;
-    
-    /**
-     * todo type. 
-     * types can either be action or item.
-     */
-    private String type;
-    
-    /**
-     * todo item count. 
-     * if todo type is item, item count shall be specified, otherwise null
-     */
-    private int item_count;
-    
- 
-    
-    
-    
     /**
      * Returns the version.
      *
@@ -74,6 +45,12 @@ public class TodoModel implements Serializable {
     public Long getVersion() {
         return version;
     }
+    
+    private Long eventID;
+    
+    private Long todoID;
+    
+    private int status;
 
     /**
      * Sets the version.
@@ -104,7 +81,7 @@ public class TodoModel implements Serializable {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        TodoModel other = (TodoModel) obj;
+        TodoListModel other = (TodoListModel) obj;
         if (key == null) {
             if (other.key != null) {
                 return false;
@@ -115,39 +92,27 @@ public class TodoModel implements Serializable {
         return true;
     }
 
-    public long getId() {
-        return id;
+    public Long getEventID() {
+        return eventID;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setEventID(Long eventID) {
+        this.eventID = eventID;
     }
 
-   
-
-    public String getDesc() {
-        return desc;
+    public Long getTodoID() {
+        return todoID;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setTodoID(Long todoID) {
+        this.todoID = todoID;
     }
 
-    public String getType() {
-        return type;
+    public int getStatus() {
+        return status;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setStatus(int status) {
+        this.status = status;
     }
-
-    public int getItem_count() {
-        return item_count;
-    }
-
-    public void setItem_count(int item_count) {
-        this.item_count = item_count;
-    }
-
-   
 }
