@@ -522,18 +522,18 @@
 		<div class="content">
 			<div class ="ui centered grid">
 				<div class="column">
-					<form class= "ui inverted form">
+					<form class= "ui inverted form" method="post" action="Insert">
 						
 							<div class="field">
 							<label>TODO Name</label>
-							<input type="text" name="first-name" placeholder="Enter TODO Name">
+							<input type="text" name="content" placeholder="Enter TODO Name">
 						</div>
 						
 						
 						<div class="two fields ">
 						<div class="field">
 							  <label>TODO Type</label>
-								<select class="ui fluid dropdown">
+								<select  class="ui fluid dropdown">
 									<option  value="" disabled default selected class="display-none">Select Type</option>
 									<option value="action">Action</option>
 									<option value="item">Item</option>
@@ -543,7 +543,7 @@
 						  
 						  <div class="four wide field">
 							  <label>Item Count</label>
-							  <input type="tel" placeholder="Item Count">
+							  <input name="itemcount" type="tel" placeholder="Item Count">
 							</div>
 						</div>
 						 
@@ -553,7 +553,7 @@
                                  Cancel
                         </div>
 
-						<input  type="Submit" class="ui inverted green basic button" value="Add"/>
+						<input  type="submit" class="ui inverted green basic button" value="Add"/>
 
 						
 							</div>

@@ -24,6 +24,16 @@ public class ProjectDto {
     * Tweet content.
     */
    private String content;
+   
+   /**
+    * Tweet type.
+    */
+   private String type;
+   
+   /**
+    * Tweet Item Count.
+    */
+   private int itemcount;
 
    /**
     * Tweet creation date.
@@ -76,6 +86,39 @@ public class ProjectDto {
     */
    public void setContent(String content) {
        this.content = content;
+   }
+   
+   
+   /**
+    * Retrieve type
+    * @return the type
+    */
+   public String getType() {
+       return type;
+   }
+
+   /**
+    * Set type
+    * @param content the type to set
+    */
+   public void setType(String type) {
+       this.type = type;
+   }
+   
+   /**
+    * Retrieve type
+    * @return the type
+    */
+   public int getItemCount() {
+       return itemcount;
+   }
+
+   /**
+    * Set type
+    * @param content the type to set
+    */
+   public void setItemCount(int itemcount) {
+       this.itemcount = itemcount;
    }
 
    /**

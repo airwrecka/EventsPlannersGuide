@@ -26,6 +26,8 @@ public class ProjectService {
         TodoModel todo = new TodoModel();
         //todo.setCreatedDate(input.getCreatedDate());
         todo.setDesc(input.getContent());
+        todo.setType(input.getType());
+        todo.setItem_count(input.getItemCount());
 
         if(!this.dao.saveTodo(todo)) {
             input.setErrorList(new ArrayList<String>());
