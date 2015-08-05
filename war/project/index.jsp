@@ -88,7 +88,7 @@
                 <div class="section" id="section0">
                         <div class="intro">
                                 <h1>Welcome to Plan IT</h1>
-							<a class="ui huge inverted blue button" href="../project/home.jsp" >Get Started</a>
+							<a class="ui huge inverted blue button" href="/home" >Get Started</a>
                         </div>
                 </div>
                

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@taglib prefix ="f" uri="http://www.slim3.org/functions" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -533,10 +535,10 @@
 						<div class="two fields ">
 						<div class="field">
 							  <label>TODO Type</label>
-								<select  class="ui fluid dropdown">
+								<select  name ="type" class="ui fluid dropdown">
 									<option  value="" disabled default selected class="display-none">Select Type</option>
-									<option value="action">Action</option>
-									<option value="item">Item</option>
+									<option ${f:select("type", "Action")}>Action</option>
+									<option ${f:select("type", "Item")}>Item</option>
 								</select>
 						 </div>
 						 

@@ -82,7 +82,7 @@
         <url-pattern>/ktrwjr/ktrwjr/ktrwjr.s3gwt</url-pattern>
     </servlet-mapping>
    
-  <!-- 
+   
     <security-constraint>
         <web-resource-collection>
             <url-pattern>*.jsp</url-pattern>
@@ -90,7 +90,7 @@
         <auth-constraint>
         </auth-constraint>
     </security-constraint>
-    -->
+  
     
     <security-constraint>
         <web-resource-collection>
