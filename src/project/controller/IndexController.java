@@ -23,8 +23,8 @@ public class IndexController extends Controller {
 
     @Override
     public Navigation run() throws Exception {
-        List<TodoModel> todoList = service.getTodoList();
-        requestScope("todoList", todoList);
-        return forward("project/home.jsp");
+        //List<TodoModel> todoList = service.getTodoList();
+        //requestScope("todoList", todoList);
+        return forward("index.jsp");
     }
 }

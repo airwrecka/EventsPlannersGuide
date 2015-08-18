@@ -191,11 +191,7 @@
 
 				  Add Todo
 				</div>
-				<p>Test</p>
-		<form method="post" action="Insert">
-			<textarea name="content"></textarea><br/>
-			<input type="submit" value="todo"/>
-		</form>
+				
 			</div>
 			
 			
@@ -443,12 +439,13 @@
 			<!-- MENU CONTENT, TODOS -->
 			
 				<!-- DEFAULT, TODO -->
-					<div class="ui right attached tab segment" data-tab="todos">
+					<div class="ui right attached tab segment" data-tab="todos" >
 						<div class="sixteen wide column">
-							SELECT ON A CATEGORY TO BEGIN
-						</div>
+							
 					</div>
 					
+				  </div>
+				  
 				<!-- ALL, TODO -->
 					<div class="ui right attached tab segment" data-tab="all">
 						<div class="sixteen wide column">
@@ -495,7 +492,8 @@
 				<!-- ITEM, TODO -->
 					<div class="ui right attached tab segment" data-tab="item">
 						<div class="sixteen wide column">
-							Item Todos
+							<div id="todoList"></div>
+							
 						</div>
 					</div>
 				
@@ -569,7 +567,7 @@
 </div>
 	
 </body>
-
+<script type="text/javascript" src="/js/todo.js"></script>
 <script type="text/javascript">
 	$('#addTodo').on( "click", function() {
 			$('#addTodoModal').modal({
@@ -578,7 +576,7 @@
 			  .modal('show');
                   
 		}); 
-
+	
 </script>
 
 

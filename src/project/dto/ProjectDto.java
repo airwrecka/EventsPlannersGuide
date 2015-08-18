@@ -7,13 +7,14 @@ package project.dto;
 
 import java.util.Date;
 import java.util.List;
+import java.util.ArrayList;
 
 public class ProjectDto {
   
     /**
     * List of errors.
     */
-   private List<String> errorList;
+   private List<String> errorList = new ArrayList<String>();
 
    /**
     * Tweet id.
@@ -23,7 +24,7 @@ public class ProjectDto {
    /**
     * Tweet content.
     */
-   private String content;
+   private String desc;
    
    /**
     * Tweet type.
@@ -33,12 +34,12 @@ public class ProjectDto {
    /**
     * Tweet Item Count.
     */
-   private int itemcount;
+   private int item_count;
 
    /**
     * Tweet creation date.
     */
-   private String createdDate = new Date().toString();
+  
 
    /**
     * Retrieve errorList
@@ -76,16 +77,16 @@ public class ProjectDto {
     * Retrieve content
     * @return the content
     */
-   public String getContent() {
-       return content;
+   public String getDesc() {
+       return desc;
    }
 
    /**
     * Set content
     * @param content the content to set
     */
-   public void setContent(String content) {
-       this.content = content;
+   public void setDesc(String desc) {
+       this.desc = desc;
    }
    
    
@@ -110,7 +111,7 @@ public class ProjectDto {
     * @return the type
     */
    public int getItemCount() {
-       return itemcount;
+       return item_count;
    }
 
    /**
@@ -118,24 +119,10 @@ public class ProjectDto {
     * @param content the type to set
     */
    public void setItemCount(int itemcount) {
-       this.itemcount = itemcount;
+       this.item_count = itemcount;
    }
 
-   /**
-    * Retrieve createdDate
-    * @return the createdDate
-    */
-   public String getCreatedDate() {
-       return createdDate;
-   }
-
-   /**
-    * Set createdDate
-    * @param createdDate the createdDate to set
-    */
-   public void setCreatedDate(String createdDate) {
-       this.createdDate = createdDate;
-   }
+ 
 
 
 }

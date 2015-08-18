@@ -16,8 +16,8 @@ public class HomeController extends Controller {
     
     @Override
     public Navigation run() throws Exception {
-        List<TodoModel> todoList = service.getTodoList();
-        requestScope("todoList", todoList);
+//        List<TodoModel> todoList = service.getTodoList();
+//        requestScope("todoList", todoList);
         return forward("project/home.jsp");
     }
 }
