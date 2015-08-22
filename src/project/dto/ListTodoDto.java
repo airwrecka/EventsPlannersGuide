@@ -10,7 +10,11 @@ import java.util.List;
 
 
 
-
+/**
+ * For multiple entry Todo
+ * @author 
+ *
+ */
 
 public class ListTodoDto {
     private List<String> errorList = new ArrayList<String>();

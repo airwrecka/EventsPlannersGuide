@@ -34,6 +34,8 @@ public class InsertController extends Controller {
             json = new JSONObject((String)this.requestScope("data"));
 
             dto.setDesc(json.getString("desc"));
+            dto.setType(json.getString("todoType"));
+            dto.setItem_count(json.getInt("count"));
             if ((dto.getDesc() == null) || dto.getDesc().isEmpty()) {
                 dto.getErrorList().add("Description is required.. please supply");
             } else {

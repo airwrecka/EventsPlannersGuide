@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * For single entry Todo
+ * @author 
+ *
+ */
 public class TodoDto {
     /**
      * List of errors.

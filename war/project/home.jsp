@@ -526,14 +526,14 @@
 						
 							<div class="field">
 							<label>TODO Name</label>
-							<input type="text" name="content" placeholder="Enter TODO Name">
+							<input type="text" id="txtContent" name="content" placeholder="Enter TODO Name">
 						</div>
 						
 						
 						<div class="two fields ">
 						<div class="field">
 							  <label>TODO Type</label>
-								<select  name ="type" class="ui fluid dropdown">
+								<select id="todoType" name ="type" class="ui fluid dropdown">
 									<option  value="" disabled default selected class="display-none">Select Type</option>
 									<option ${f:select("type", "Action")}>Action</option>
 									<option ${f:select("type", "Item")}>Item</option>
@@ -543,7 +543,7 @@
 						  
 						  <div class="four wide field">
 							  <label>Item Count</label>
-							  <input name="itemcount" type="tel" placeholder="Item Count">
+							  <input id="itemCount" name="itemcount" type="tel" placeholder="Item Count">
 							</div>
 						</div>
 						 

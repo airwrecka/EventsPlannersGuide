@@ -16,7 +16,7 @@ $(document).ready(function() {
 		};
 		
 		$.ajax({
-			url: 'insert',
+			url: '/insert',
 			type: 'POST',
 			data: jsonData,
 			dataType: 'json',
@@ -41,8 +41,8 @@ $(document).ready(function() {
 	function retrieveTodoList(successMessage) {
 		$("#todoList").empty();
 		$.ajax({
-			url: 'list',
-			type: 'GET',
+			url: '/list',
+			type: 'POST',
 			data: null,
 			success: function(data, status, jqXHR){
 				if(data.errorList.length == 0) {
@@ -50,8 +50,8 @@ $(document).ready(function() {
 					$.each(data.todoList, function(index, value) {
 						formattedTodoList += '<hr />' +
 							'<div class="todoRow">' +
-							'	<textarea name="desc" class="desc">' + value.desc + '</textarea>' + value.type +
-							'	<input type="hidden" class="id" name="id" value="' + value.id + '"/>' +
+							'	<textarea name="desc" id="txtContent" class="desc">' + value.desc + '</textarea>' + value.todoType +
+							'	<input type="hidden" class="id" name="id" value="' + value.id + '"/>' + value.count +
 							'	<button class="btnUpdate">Save</button>' +
 							'	<button class="btnDelete">Delete</button>' +
 							'	<div class="updateErrorDisplay"></div>' +
